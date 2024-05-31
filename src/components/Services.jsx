@@ -28,9 +28,11 @@ const Services = ({ isOpen, setIsOpen, active, setActive, data, setFlag }) => {
             className={`flex flex-col rounded-lg py-[14px] px-4 items-center border-[0.5px]  justify-between ${
               active === item.id ? "border-[#024751]" : "border-[#F0F5F4]"
             } `}
-            onClick={() => handleClick(item)}
           >
-            <div className="flex justify-between items-center w-full">
+            <div
+              onClick={() => handleClick(item)}
+              className="flex justify-between items-center w-full"
+            >
               <p className="text-teal-950 text-sm font-normal font-['Satoshi'] leading-[21px]">
                 {item.heading}
               </p>
