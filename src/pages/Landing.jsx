@@ -15,7 +15,7 @@ const Landing = () => {
   const [flag, setFlag] = useState(false);
 
   return (
-    <main className="max-w-[360px] pb-[50px]">
+    <main className=" pb-[50px] ">
       <div className="py-8 px-4 bg-primary_green flex justify-between items-center ">
         <span className="text-white text-[28px]">
           <BsArrowLeft />
@@ -28,7 +28,7 @@ const Landing = () => {
         </span>
       </div>
 
-      <section className="px-4">
+      <section className="px-4 max-w-[360px] mx-auto">
         <div className="flex gap-[5px] mt-6 mx-auto w-fit">
           {Array.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], (_, index) => {
             return (
